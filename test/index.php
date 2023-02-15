@@ -1,8 +1,10 @@
 <?php
- require_once("../libs/Smarty.class.php");
- $smarty = new Smarty;
+require_once("../libs/Smarty.class.php");
 
- $smarty->assign('choose_opt', array(
+$smarty = new Smarty;
+
+
+$smarty->assign('choose_opt', array(
     'volvo'=>'volvo',
     'toyota'=>'toyota',
     'maruti'=>'maruti',
@@ -45,6 +47,5 @@ $smarty->assign('countChr','uCertify, headquartered in Pleasanton, CA, was found
 $smarty->assign('someText',' uCertify, headquartered in Pleasanton, CA, was founded on the belief that we "learn by doing" and interactivity is the key to effective learning, using virtual environments where students learn by doing. The virtual environment encourages safe exploration and experimentation resulting in better learning. uCertify platform is equally effective for self-paced, instructor-led or blended learning.');
 $smarty->assign('data',array(1,2,3,4,5,6,7));
 $smarty->assign('text','hello word');
-
- $smarty->display('template.tpl');
+$smarty->display('template.tpl');
 ?>
